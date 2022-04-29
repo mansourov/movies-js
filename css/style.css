@@ -1,0 +1,332 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body {
+    /* background-color: rgb(224, 76, 17); */
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    
+    
+    font-family: 'Abel', sans-serif;
+}
+
+.block {
+    display: flex;
+}
+
+.filmmark {
+    width: 25%;
+}
+
+.filmmarkbtn {
+    background: rgba(13, 118, 255, 0.192);
+    color: rgb(95, 95, 228);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+}
+
+.title {
+    margin-top: 50px;
+    color: whitesmoke;
+    font-size: 48px;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#form h2{
+    font-size: 22px;
+    color: white;
+    margin-top: 4rem;
+}
+
+.filmmark {
+    display: flex;
+    flex-direction: column;
+}
+
+.filmMark {
+    position: relative;
+}
+
+.filmMarkList {
+    margin-top: 1.7rem;
+
+    min-width: 240px;
+    min-height: 72px;
+
+    max-width: 280px;
+    max-height: 102px;
+    
+    background: #F8FAFD;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 15px;           
+}
+
+.filmMarkName {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;      
+    color: #000000;
+}
+
+.filmMarkYear {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;      
+    color: #706e6e;
+}
+
+.filmtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.filmMark__btn {
+    background: crimson;
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+
+.selects {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selects::after {
+    content: "";
+    position: absolute;
+
+    width: 87%;
+    height: 2px;
+
+    bottom: -30px;
+
+    background: white;
+}
+
+.filter  {
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sort  {
+    width: 30px;
+    height: 30px;
+    margin-top: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.labels {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input {
+    position: relative;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    width: 280px;
+    height: 40px;
+}
+
+.input2 {
+    position: relative;
+    padding: 10px;
+    margin-top: 0.8rem;
+
+    border-radius: 5px;
+
+    width: 280px;
+    height: 40px;
+}
+
+.input-select {
+    margin-right: 0.5rem;
+    height: 40px;
+    width: 245px;
+    border-radius: 5px;
+}
+
+.input-select2 {
+    margin-right: 0.5rem;
+    margin-top: 10px;
+    height: 40px;
+    width: 245px;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    color: white;
+    background-color: #2B86C5;
+
+    border-radius: 5px;
+
+    width: 135px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.btnFind {
+    color: white;
+    background-color: #9b61ce;
+    font-weight: bold;
+    border-radius: 5px;
+
+    width: 135px;
+    height: 40px;
+}
+
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btnFind:hover {
+    opacity: 0.8;
+
+}
+
+.moviesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #E5E5E5;
+
+
+        
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-top: 5rem;
+    
+}
+
+
+.filmDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 32%;
+    height: 450px;
+    background: white;
+    font-size: 14px;
+
+    color: black;
+    border-radius: 5px;
+    
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.filmDiv img {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 250px;
+    width: 260px;
+}
+
+.bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 5px;
+
+    border-radius: 8px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.bookmark:hover{
+    opacity: 0.8;
+}
+
+.filmDiv:hover {
+    box-shadow: 0 0 18px whitesmoke;
+}
+
+.pagination {
+    padding:  30px 0;
+    display: flex;
+}
+
+.markName {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    color: white;
+    margin-top: 4rem;
+}
+
+.markName:before {
+    content: "";
+    position: absolute;
+
+    top: -20px;
+    width: 87%;
+    height: 2px;
+
+    background: white;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link {
+    padding: 0.5rem;
+    background: #E5E5E5;
+    border-radius: 6px;
+    margin: 5px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Movies</title>
+</head>
+
+<body>
+    <section class="container block">
+        <!-- filmmark -->
+        <div class="filmmark">
+            <form id="form">
+                <!-- genres -->
+                <h2>FILTER</h2>
+                <div class="selects">
+                    <select class="input-select" aria-label="Default select example" id="selectMovies">
+                        <option selected disabled>Choose the Genres of film</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Family">Family</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Biography">Biography</option>
+                        <option value="Family">Family</option>
+                        <option value="Music">Music</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Western">Western</option>
+                        <option value="War">War</option>
+                    </select>
+                    <img class="filter" src="./img/filter.svg" alt="" />
+
+
+                    <!-- sort -->
+                    <select class="input-select2" aria-label="Default select example" id="selectNewOrOld">
+                        <option selected disabled>New or Old</option>
+                        <option value="New">New</option>
+                        <option value="Old">Old</option>
+                    </select>
+                    <img class="sort" src="./img/sort.svg" alt="" />
+
+                </div>
+
+                <h2>SEARCH</h2>
+                <div class="labels">
+                    <!-- by title -->
+                    <label>
+                        <input class="input" id="inputFind" type="text" autocomplete="off" placeholder="By title" />
+                        <span class="search"></span>
+                    </label>
+
+                    <!-- search -->
+                    <label>
+                        <input class="input2" id="inputGenres" type="text" autocomplete="off" placeholder="By genres" />
+                        <span class="search"></span>
+                    </label>
+
+                    <div class="buttons">
+                        <button class="btnFind" id="findBtn">Find</button>
+                        <button class="btn" type="button" id="allMoviesBtn">
+                            All Movies
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <h2 class="markName">FILM-MARK</h2>
+
+            <ul class="filmMark">
+                
+            </ul>
+        </div>
+
+        <!-- movies -->
+        <div class="movies">
+            <h1 class="title">Movies</h1>
+
+            <div id="moviesList" class="moviesList">
+                
+            </div>
+
+            <div class="">
+                <ul class="pagination"></ul>
+            </div>
+        </div>
+    </section>
+
+    <template id="page-item-template">
+        <li class="page-item ps-1">
+            <a href="#" class="page-link">back</a>
+        </li>
+    </template>
+
+    <template id="film-item-template">
+        <div class="filmDiv">
+            <img class="img" src="https://picsum.photos/200/300?grayscale
+            " alt="" />
+
+            <div class="filmTitle">title</div>
+
+            <div class="filmYear">year</div>
+
+            <div class="filmGenres">genres</div>
+
+
+            <div class="filmActors">actors</div>
+
+            <button type="button" class="filmmarkbtn">FilmMark</button>
+        </div>
+    </template>
+
+    <template id="film-mark">
+        <li class="filmMarkList">
+            <div class="filmtext">
+                <span class="filmMarkName">Paris</span>
+                <span class="filmMarkYear">Year</span>
+            </div>
+            <div class="filmMarks">
+                <button class="filmMark__btn" type="submit">
+                    DELETE
+                </button>
+            </div>
+        </li>
+    </template>
+</body>
+<script src="./js/movies.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
